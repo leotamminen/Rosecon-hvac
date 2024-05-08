@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import About from "./About";
-import Yhteystiedot from "./Yhteystiedot";
-import Palvelut from "./Palvelut";
-import Asiakastarinat from "./Asiakastarinat";
+import Yhteystiedot from "./pages/Yhteystiedot";
+import Palvelut from "./pages/Palvelut";
+import Asiakastarinat from "./pages/Asiakastarinat";
 
 const Navbar = () => {
   return (

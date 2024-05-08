@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./About";
+import About from "../About";
 import App from "../App";
 import Yhteystiedot from "./Yhteystiedot";
 import Palvelut from "./Palvelut";
