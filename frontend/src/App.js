@@ -1,9 +1,9 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import About from "./About";
-import Yhteystiedot from "./Yhteystiedot";
-import Palvelut from "./Palvelut";
-import Asiakastarinat from "./Asiakastarinat";
+import Yhteystiedot from "./pages/Yhteystiedot";
+import Palvelut from "./pages/Palvelut";
+import Asiakastarinat from "./pages/Asiakastarinat";
 import { Link } from "react-router-dom";
 
 function App() {
