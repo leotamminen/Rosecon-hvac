@@ -1,18 +1,17 @@
 import React from "react";
-import { Link, Routes, Route } from "react-router-dom";
-import About from "./About";
-import Yhteystiedot from "./pages/Yhteystiedot";
-import Palvelut from "./pages/Palvelut";
-import Asiakastarinat from "./pages/Asiakastarinat";
+import { Link } from "react-router-dom";
+import "./App.css";
 
 const Navbar = () => {
   return (
-    <>
-      <Link to="/" className="navbar-logo">
-        <img src="/favicon.ico" alt="Logo" className="navbar-logo-img" />
-        <h1>Rosecon hvac</h1>
-      </Link>
-      <nav className="navbar">
+    <nav className="navbar">
+      <div className="navbar-logo-container">
+        <Link to="/" className="navbar-logo">
+          <img src="/favicon.ico" alt="Logo" className="navbar-logo-img" />
+          <h1>Rosecon HVAC</h1>
+        </Link>
+      </div>
+      <div className="navbar-links">
         <Link to="/palvelut" className="navbar-button">
           Palvelut
         </Link>
@@ -25,15 +24,8 @@ const Navbar = () => {
         <Link to="/yhteystiedot" className="navbar-button">
           Yhteystiedot
         </Link>
-      </nav>
-
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/yhteystiedot" element={<Yhteystiedot />} />
-        <Route path="/palvelut" element={<Palvelut />} />
-        <Route path="/asiakastarinat" element={<Asiakastarinat />} />
-      </Routes>
-    </>
+      </div>
+    </nav>
   );
 };
 
