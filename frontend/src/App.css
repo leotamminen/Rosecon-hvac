@@ -29,7 +29,6 @@ App {
   height: 80px; /* Fixed height for the navbar */
   z-index: 1000; /* Ensure it stays on top of other content */
 }
-
 .navbar-logo-container {
   display: flex;
   align-items: center;
@@ -54,10 +53,15 @@ App {
 }
 
 .navbar-links {
+  display: none;
+}
+
+/* When the .show class is added, display the navbar-links */
+.navbar-links.show {
   display: flex;
-  justify-content: space-between; /* Ensure equal spacing between links */
-  flex-grow: 1;
-  margin-left: 20px; /* Add space between the logo and the links */
+  flex-direction: column;
+  width: 100%; /* Ensure it spans the full width of the navbar */
+  align-items: center; /* Center-align the links for a better appearance */
 }
 
 .navbar-button {
@@ -71,6 +75,33 @@ App {
 
 .navbar-button:hover {
   background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-logo-img {
+    height: 50px; /* Smaller logo for smaller screens */
+    margin-right: 5px;
+  }
+
+  .navbar-logo-text {
+    font-size: 1.5rem; /* Smaller text for smaller screens */
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+    margin-left: 0; /* Remove margin between logo and links */
+    padding: 10px 0; /* Add some padding around links */
+  }
+
+  .navbar-links a {
+    padding: 5px 0; /* Add padding to each link for easier tapping */
+  }
+
+  .navbar-button {
+    padding: 10px 15px; /* Slightly smaller buttons */
+    margin: 5px 0; /* Adjust margin for vertical layout */
+  }
 }
 
 .content {

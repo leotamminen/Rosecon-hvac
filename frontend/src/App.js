@@ -6,10 +6,12 @@ import Palvelut from "./pages/Palvelut";
 import Asiakastarinat from "./pages/Asiakastarinat";
 import Navbar from "./Navbar";
 import Etusivu from "./pages/Etusivu";
+import DenseAppBar from "./appbar";
 
 function App() {
   return (
     <div className="App">
+      <DenseAppBar/>
       <Navbar />
       <div className="content">
         <Routes>

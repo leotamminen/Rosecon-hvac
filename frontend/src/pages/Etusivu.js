@@ -101,9 +101,27 @@ const ImageMarked = styled('span')(({ theme }) => ({
 function Item2() {
   return (
     <Container>
-      <Box display="flex" justifyContent="center" sx ={{border: '1px dashed grey',  minWidth: "100%" }} >
+      <Box display="flex"  justifyContent="center" sx ={{display: { xs: 'block', md: 'none', }, border: '1px dashed grey',  maxWidth: "100%", margin: "auto" }} >
       <img
-              style={{ width: "50%", boxShadow: 1, height: 400, borderRadius: 50, borderBlockColor: "black"}}
+              style={{maxWidth: '100%', // Ensures the image is not larger than its container
+                height: 'auto', // Maintains aspect ratio
+                borderRadius: 50,
+                boxShadow: '0px 1px 1px 1px rgba(0,0,0,0.1)', // Example shadow, adjust as needed
+                border: '1px solid black' // Example border, adjust as needed borderRadius: 50, borderBlockColor: "black"
+              }} 
+              alt="complex"
+              src={putkiImage}
+              aling="center"
+            />
+      </Box>
+      <Box display="flex"  justifyContent="center" sx ={{display: { xs: 'none', md: 'block', }, border: '1px dashed grey',  maxWidth: "50%", margin: "auto" }} >
+      <img
+              style={{maxWidth: '100%', // Ensures the image is not larger than its container
+                height: 'auto', // Maintains aspect ratio
+                borderRadius: 50,
+                boxShadow: '0px 1px 1px 1px rgba(0,0,0,0.1)', // Example shadow, adjust as needed
+                border: '1px solid black' // Example border, adjust as needed borderRadius: 50, borderBlockColor: "black"
+              }} 
               alt="complex"
               src={putkiImage}
               aling="center"
