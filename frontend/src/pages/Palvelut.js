@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import putkiImage from '../images/putki.jpg';
 import asennusImage from '../images/asennus.jpg';
 import huoltoImage from '../images/huolto.jpg';
-
+import DenseAppBar from "../appbar";
 const images = [
   {
     url: putkiImage,
@@ -94,7 +94,7 @@ const Palvelut = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
+      
       </header>
 
       <p>Teemme kaikki LVI huolella.</p>
