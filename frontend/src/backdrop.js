@@ -6,7 +6,7 @@ const Backdrop = () => {
   return (
     <div className="backdrop" style={{ backgroundImage: `url(${huoltoImage})` }}>
       <div className="overlay">
-        <h1 className="text">Your Text Here</h1>
+        <h1 className="text">LVI-Hommat since 2019</h1>
       </div>
     </div>
   );

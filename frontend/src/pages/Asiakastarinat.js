@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar";
-
+import DenseAppBar from "../appbar";
 const Asiakastarinat = () => {
   return (
     <div className="App">
+
       <header className="App-header">
-        <Navbar />
+      
       </header>
 
       <p>

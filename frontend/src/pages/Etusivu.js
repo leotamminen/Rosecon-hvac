@@ -101,39 +101,29 @@ const ImageMarked = styled('span')(({ theme }) => ({
 function Item2() {
   return (
     <Container>
-      <Box display="flex"  justifyContent="center" sx ={{display: { xs: 'block', md: 'none', }, border: '1px dashed grey',  maxWidth: "100%", margin: "auto" }} >
-      <img
-              style={{maxWidth: '100%', // Ensures the image is not larger than its container
-                height: 'auto', // Maintains aspect ratio
-                borderRadius: 50,
-                boxShadow: '0px 1px 1px 1px rgba(0,0,0,0.1)', // Example shadow, adjust as needed
-                border: '1px solid black' // Example border, adjust as needed borderRadius: 50, borderBlockColor: "black"
-              }} 
-              alt="complex"
-              src={putkiImage}
-              aling="center"
-            />
+      <Box display="flex" justifyContent="center" sx={{ border: '1px dashed grey', maxWidth: "100%", margin: "auto" }}>
+        <img
+          style={{
+            maxWidth: '50%',
+            minWidth: '200px', // Set a minimum width for the image
+            height: 'auto',
+            borderRadius: 50,
+            boxShadow: '0px 1px 1px 1px rgba(0,0,0,0.1)',
+            border: '1px solid black'
+          }}
+          alt="complex"
+          src={putkiImage}
+          align="center"
+        />
       </Box>
-      <Box display="flex"  justifyContent="center" sx ={{display: { xs: 'none', md: 'block', }, border: '1px dashed grey',  maxWidth: "50%", margin: "auto" }} >
-      <img
-              style={{maxWidth: '100%', // Ensures the image is not larger than its container
-                height: 'auto', // Maintains aspect ratio
-                borderRadius: 50,
-                boxShadow: '0px 1px 1px 1px rgba(0,0,0,0.1)', // Example shadow, adjust as needed
-                border: '1px solid black' // Example border, adjust as needed borderRadius: 50, borderBlockColor: "black"
-              }} 
-              alt="complex"
-              src={putkiImage}
-              aling="center"
-            />
-      </Box>
+      
     </Container>
   );
 }
 function Item() {
   return (
     <Box displaY="flex" justifyContent="center" sx={{border: '1px dashed grey', whiteSpace: 'normal', width: 'auto', overflow: 'auto' }}>
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
 </Box>
   );
 
@@ -194,31 +184,9 @@ const Etusivu = () => {
       ))}
     </Box>
     
-    <Box
-        component="span"
-        sx={{
-          display: 'block',
-          p: 1,
-          m: 1,
-          bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#fff'),
-          color: (theme) =>
-            theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
-          border: '1px solid',
-          borderColor: (theme) =>
-            theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
-          borderRadius: 2,
-          fontSize: '0.875rem',
-          fontWeight: '700',
-        }}
-      >
-        block
-      </Box>
+    
 
-      <FormControl>
-        <InputLabel htmlFor="my-input">Email address</InputLabel>
-        <Input id="my-input" aria-describedby="my-helper-text" />
-        <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
-      </FormControl>
+      
     </div>
   );
 };
